@@ -1,5 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import charlesImg from "@/assets/testimonial-charles.jpg";
+import williamImg from "@/assets/testimonial-william.jpg";
+import michaelImg from "@/assets/testimonial-michael.jpg";
 
 const Testimonials = () => {
   const testimonials = [
@@ -8,18 +11,21 @@ const Testimonials = () => {
       role: "CEO",
       rating: 5,
       text: "Working with Deepak was an absolute pleasure. The attention to detail and creative solutions exceeded our expectations.",
+      image: charlesImg,
     },
     {
       name: "William Campbell",
       role: "CTO",
       rating: 5,
       text: "Exceptional design skills combined with technical expertise. Delivered our project on time with outstanding quality.",
+      image: williamImg,
     },
     {
       name: "Michael Miller",
       role: "Manager",
       rating: 5,
       text: "A true professional who understands both design and business needs. Highly recommend for any digital project.",
+      image: michaelImg,
     },
   ];
 
@@ -48,7 +54,9 @@ const Testimonials = () => {
                 </div>
                 <p className="text-muted-foreground mb-6 italic">"{testimonial.text}"</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-card"></div>
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-card">
+                    <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
+                  </div>
                   <div>
                     <p className="font-bold">{testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>

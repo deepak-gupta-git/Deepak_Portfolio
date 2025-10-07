@@ -1,5 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import saasImg from "@/assets/portfolio-saas.jpg";
+import educationImg from "@/assets/portfolio-education.jpg";
+import litigationImg from "@/assets/portfolio-litigation.jpg";
+import coffeeImg from "@/assets/portfolio-coffee.jpg";
 
 const Portfolio = () => {
   const projects = [
@@ -7,21 +11,25 @@ const Portfolio = () => {
       title: "Saas Landing Page",
       category: "Landing Page",
       tags: ["Web Design", "UI/UX"],
+      image: saasImg,
     },
     {
       title: "Education Platform",
       category: "Web App",
       tags: ["App Design", "Development"],
+      image: educationImg,
     },
     {
       title: "Litigation Mobile App",
       category: "Mobile App",
       tags: ["Mobile", "UI/UX"],
+      image: litigationImg,
     },
     {
       title: "Coffee Shop App",
       category: "Mobile App",
       tags: ["App Design", "Branding"],
+      image: coffeeImg,
     },
   ];
 
@@ -42,16 +50,12 @@ const Portfolio = () => {
               className="group overflow-hidden hover:shadow-hover transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 bg-white rounded-2xl shadow-card mb-4 mx-auto transform group-hover:scale-110 transition-transform"></div>
-                    <div className="space-y-2">
-                      <div className="h-3 bg-muted rounded w-3/4 mx-auto"></div>
-                      <div className="h-3 bg-muted rounded w-1/2 mx-auto"></div>
-                    </div>
-                  </div>
-                </div>
+              <div className="aspect-video relative overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">

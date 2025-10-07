@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import profileImg from "@/assets/profile.png";
 
 const Hero = () => {
   return (
@@ -45,14 +46,21 @@ const Hero = () => {
               {/* Decorative circle */}
               <div className="absolute w-[400px] h-[400px] rounded-full bg-accent/30 blur-2xl"></div>
               
+              {/* Profile Image */}
+              <div className="relative z-10">
+                <div className="w-[350px] h-[350px] rounded-full overflow-hidden border-8 border-white/20 shadow-2xl">
+                  <img src={profileImg} alt="Deepak Gupta Profile" className="w-full h-full object-cover" />
+                </div>
+              </div>
+              
               {/* Badge */}
-              <div className="absolute top-10 right-20 bg-white px-6 py-3 rounded-full shadow-card animate-fade-in">
+              <div className="absolute top-10 right-20 bg-white px-6 py-3 rounded-full shadow-card animate-fade-in z-20">
                 <p className="text-2xl font-bold text-primary">8+</p>
                 <p className="text-sm text-muted-foreground">Years Experience</p>
               </div>
 
               {/* Best Customer Badge */}
-              <div className="absolute bottom-20 left-10 bg-white px-4 py-2 rounded-xl shadow-card flex items-center gap-2 animate-fade-in">
+              <div className="absolute bottom-20 left-10 bg-white px-4 py-2 rounded-xl shadow-card flex items-center gap-2 animate-fade-in z-20">
                 <span className="text-sm font-semibold">Best Customer</span>
                 <div className="flex -space-x-2">
                   <div className="w-6 h-6 rounded-full bg-primary"></div>
