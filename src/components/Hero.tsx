@@ -21,16 +21,18 @@ const Hero = () => {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Hello, I'm<br />
               <span className="text-secondary">Deepak Gupta</span><br />
-              A UI UX Designer
+              A Full Stack Web Developer
             </h1>
             <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-xl">
-              I create beautiful digital experiences that help businesses grow. 
-              Passionate about design, development, and delivering exceptional results.
+               I build modern, scalable, and user-friendly web applications. 
+  Skilled in the MERN stack, I love turning ideas into powerful digital solutions.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-gradient-accent text-accent-foreground hover:opacity-90 transition-all hover:scale-105 px-8 py-6 text-lg">
+             <a href="#">
+               <Button className="bg-gradient-accent text-accent-foreground hover:opacity-90 transition-all hover:scale-105 px-8 py-6 text-lg">
                 Get Started
               </Button>
+             </a>
               <Button 
                 variant="ghost" 
                 className="text-white border-2 border-white/30 hover:bg-white/10 backdrop-blur-sm px-8 py-6 text-lg"
@@ -55,7 +57,7 @@ const Hero = () => {
               
               {/* Badge */}
               <div className="absolute top-10 right-20 bg-white px-6 py-3 rounded-full shadow-card animate-fade-in z-20">
-                <p className="text-2xl font-bold text-primary">8+</p>
+                <p className="text-2xl font-bold text-primary">2+</p>
                 <p className="text-sm text-muted-foreground">Years Experience</p>
               </div>
 

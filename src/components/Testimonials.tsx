@@ -1,31 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
-import charlesImg from "@/assets/testimonial-charles.jpg";
-import williamImg from "@/assets/testimonial-william.jpg";
-import michaelImg from "@/assets/testimonial-michael.jpg";
+import astha from "@/assets/astha.jpg";
+import nikheel from "@/assets/nikheel.jpg";
+import rajkumar from "@/assets/rajkumar.jpg";
+
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Charles Bynum",
-      role: "CEO",
+      name: "Nikheel Kumar",
+      role: "Consumer",
       rating: 5,
       text: "Working with Deepak was an absolute pleasure. The attention to detail and creative solutions exceeded our expectations.",
-      image: charlesImg,
+      image: nikheel,
     },
     {
-      name: "William Campbell",
-      role: "CTO",
+      name: "Rajkumar Gupta",
+      role: "Consumer",
       rating: 5,
       text: "Exceptional design skills combined with technical expertise. Delivered our project on time with outstanding quality.",
-      image: williamImg,
+      image: rajkumar,
     },
     {
-      name: "Michael Miller",
-      role: "Manager",
+      name: "Astha Sharma",
+      role: "Consumer",
       rating: 5,
       text: "A true professional who understands both design and business needs. Highly recommend for any digital project.",
-      image: michaelImg,
+      image: astha,
     },
   ];
 

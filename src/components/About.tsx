@@ -1,10 +1,12 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profile_image from "@/assets/new_Profile_Image.jpg"
+// import { NavLink } from "react-router-dom";
 
 const About = () => {
   const highlights = [
-    { number: "50+", label: "Complete Project" },
-    { number: "8+", label: "Years of Experience" },
+    { number: "30+", label: "Complete Project" },
+    { number: "2+", label: "Years of Experience" },
   ];
 
   return (
@@ -14,13 +16,16 @@ const About = () => {
           <div className="relative animate-fade-in">
             <div className="relative w-full h-[500px] bg-gradient-accent rounded-3xl overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-[350px] h-[350px] rounded-full border-8 border-white/30 flex items-center justify-center overflow-hidden bg-white/10 backdrop-blur-sm">
-                  <div className="text-white text-center p-8">
-                    <p className="text-6xl font-bold mb-2">DG</p>
-                    <p className="text-xl">Designer & Developer</p>
-                  </div>
-                </div>
-              </div>
+  <div className="w-[400px] h-[400px] rounded-full border-8 border-white/30 flex items-center justify-center overflow-hidden bg-white/10 backdrop-blur-sm">
+    {/* Replace the text with your image */}
+    <img
+      src={profile_image} // <-- replace with your image path
+      alt="Deepak Gupta"
+      className="w-full h-full object-cover rounded-full"
+    />
+  </div>
+</div>
+
               
               {/* Decorative elements */}
               <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-white/20"></div>
@@ -34,8 +39,7 @@ const About = () => {
               Designing Solutions, Not Just Visuals
             </h2>
             <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
-              I'm a passionate UI/UX designer and developer focused on creating beautiful, 
-              functional digital experiences. With years of experience in the industry, 
+             I am a passionate Full Stack Developer with 2+ years of experience building scalable and dynamic web applications. Over this period, I have successfully developed and deployed 30+ full-stack projects using MERN stack (MongoDB, Express, React, Node.js), along with modern tools like Tailwind CSS, Git, and REST APIs.
               I help businesses transform their ideas into reality through thoughtful design 
               and clean code.
             </p>
@@ -52,9 +56,11 @@ const About = () => {
               ))}
             </div>
 
-            <Button className="bg-gradient-accent text-accent-foreground hover:opacity-90 transition-all hover:scale-105 px-8 py-6 text-lg">
-              Download CV
+           <a href="https://github.com/deepak-gupta-git">
+             <Button className="bg-gradient-accent text-accent-foreground hover:opacity-90 transition-all hover:scale-105 px-8 py-6 text-lg">
+              Github 
             </Button>
+           </a>
           </div>
         </div>
       </div>

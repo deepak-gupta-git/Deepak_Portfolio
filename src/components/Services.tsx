@@ -1,22 +1,57 @@
-import { Palette, Code, Package } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { 
+  Code, 
+  Layout, 
+  Database, 
+  Globe, 
+  MonitorSmartphone, 
+  Bot 
+} from "lucide-react";
+
+import { 
+  Card, 
+  CardContent, 
+  CardDescription, 
+  CardHeader, 
+  CardTitle 
+} from "@/components/ui/card";
 
 const Services = () => {
   const services = [
     {
-      icon: Palette,
-      title: "UI UX Design",
-      description: "Creating intuitive and beautiful user interfaces that enhance user experience and drive engagement.",
-    },
-    {
       icon: Code,
-      title: "Webflow Develop",
-      description: "Building responsive and performant websites using modern web technologies and best practices.",
+      title: "Full Stack Web Development",
+      description:
+        "Building fast, responsive, and scalable web applications using the MERN stack (MongoDB, Express, React, Node.js).",
     },
     {
-      icon: Package,
-      title: "Product Design",
-      description: "Designing complete digital products from concept to launch with focus on user needs and business goals.",
+      icon: Layout,
+      title: "Frontend Development",
+      description:
+        "Crafting modern, mobile-friendly interfaces with React.js and Tailwind CSS for a seamless user experience.",
+    },
+    {
+      icon: Database,
+      title: "Backend API Development",
+      description:
+        "Developing secure and efficient RESTful APIs with Node.js and Express to power dynamic web applications.",
+    },
+    {
+      icon: Globe,
+      title: "SEO Optimization",
+      description:
+        "Improving website visibility and search ranking through SEO-friendly code, metadata, and performance tuning.",
+    },
+    {
+      icon: MonitorSmartphone,
+      title: "Website Maintenance",
+      description:
+        "Providing ongoing updates, bug fixes, and performance improvements to keep your website running smoothly.",
+    },
+    {
+      icon: Bot,
+      title: "AI Chatbot Integration",
+      description:
+        "Integrating AI-powered chatbots using Google Gemini API and other tools to enhance user engagement and automation.",
     },
   ];
 
@@ -24,18 +59,20 @@ const Services = () => {
     <section id="services" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <p className="text-primary font-semibold mb-2 uppercase tracking-wider">SERVICES</p>
+          <p className="text-primary font-semibold mb-2 uppercase tracking-wider">
+            SERVICES
+          </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
             Expertise Service! Let's check it out
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Delivering comprehensive design and development solutions tailored to your business needs
+            Delivering comprehensive web development and optimization solutions tailored to your business needs.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card 
+            <Card
               key={index}
               className="group hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-primary/20 animate-fade-in bg-gradient-to-br from-primary/5 to-transparent"
               style={{ animationDelay: `${index * 100}ms` }}

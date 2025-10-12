@@ -25,8 +25,8 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-            Brand
+            <div className="text-2xl cursor-pointer font-bold bg-gradient-hero bg-clip-text text-transparent">
+            Deepak Gupta
           </div>
 
           {/* Desktop Navigation */}
@@ -40,9 +40,11 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button className="bg-gradient-accent text-accent-foreground hover:opacity-90 transition-opacity">
-              Download CV
+            <a href="https://github.com/deepak-gupta-git">
+              <Button className="bg-gradient-accent text-accent-foreground hover:opacity-90 transition-opacity">
+              Show Projects
             </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -69,9 +71,11 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
+               <a href="https://github.com/deepak-gupta-git">
               <Button className="bg-gradient-accent text-accent-foreground hover:opacity-90 transition-opacity w-full">
                 Download CV
               </Button>
+              </a>
             </div>
           </div>
         )}
