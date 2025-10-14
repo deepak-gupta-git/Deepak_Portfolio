@@ -2,12 +2,6 @@
 
 This is my personal **portfolio website** built using **React.js**, designed to showcase my projects, skills, and experience as a Full Stack Developer.
 
-## 🚀 Live Demo
-[🔗 Visit My Portfolio](https://your-deployed-link.com)  
-_(Replace with your actual deployed URL on Render, Netlify, or Vercel)_
-
----
-
 ## 🛠️ Tech Stack
 
 - ⚛️ **React.js** – Frontend library for building UI  
